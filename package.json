@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,7 @@
     "@angular/compiler": "~9.1.7",
     "@angular/core": "~9.1.7",
     "@angular/cli": "^10.0.2",
-    "@angular/compiler-cli": "^9.1.12",
+    "@angular/compiler-cli": "10.0.3",
     "@angular/forms": "~9.1.7",
     "@angular/google-maps": "^10.0.1",
     "@angular/localize": "~9.1.7",
