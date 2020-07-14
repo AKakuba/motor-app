@@ -14,17 +14,17 @@
   "private": true,
   "dependencies": {
     "@agm/core": "^1.1.0",
-    "@angular/animations": "~9.1.7",
-    "@angular/common": "~9.1.7",
-    "@angular/compiler": "~9.1.7",
-    "@angular/core": "~9.1.7",
+    "@angular/animations": "~10.0.3",
+    "@angular/common": "~10.0.3",
+    "@angular/compiler": "~10.0.3",
+    "@angular/core": "~10.0.3",
     "@angular/compiler-cli": "10.0.3",
-    "@angular/forms": "~9.1.7",
+    "@angular/forms": "~10.0.3",
     "@angular/google-maps": "^10.0.1",
-    "@angular/localize": "~9.1.7",
-    "@angular/platform-browser": "~9.1.7",
-    "@angular/platform-browser-dynamic": "~9.1.7",
-    "@angular/router": "~9.1.7",
+    "@angular/localize": "~10.0.3",
+    "@angular/platform-browser": "~10.0.3",
+    "@angular/platform-browser-dynamic": "~10.0.3",
+    "@angular/router": "~10.0.3",
     "@ng-bootstrap/ng-bootstrap": "^6.2.0",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
@@ -35,7 +35,7 @@
     "screenfull": "^3.3.0",
     "tslib": "^1.13.0",
     "zone.js": "~0.10.2",
-    "typescript": "~3.8.3"
+    "typescript": "~3.9.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.6",
@@ -54,8 +54,7 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "tslint": "~6.1.0"
   },
   "engines": {
     "node": "12.16.3",
