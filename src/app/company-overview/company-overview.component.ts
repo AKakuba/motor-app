@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
-import {PersonsComponent} from '../persons/persons.component'
+import {PersonsComponent} from '../persons/persons.component';
+import {GalleryComponent} from '../gallery/gallery.component';
 
 @Component({
   selector: 'app-company-overview',
