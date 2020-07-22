@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import {PersonsComponent} from '../persons/persons.component'
 
 @Component({
   selector: 'app-company-overview',
   templateUrl: './company-overview.component.html',
   styleUrls: ['./company-overview.component.scss']
 })
-export class CompanyOverviewComponent implements OnInit {
+export class CompanyOverviewComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  year = new Date().getFullYear()-1993;
+  
 }

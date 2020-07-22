@@ -10,6 +10,8 @@ import { SharedModule } from './shared/shared.module';
 import { PersonsComponent } from './persons/persons.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CompanyOverviewComponent } from './company-overview/company-overview.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GadgetsComponent } from './gadgets/gadgets.component';
 
 
 @NgModule({
@@ -18,11 +20,15 @@ import { CompanyOverviewComponent } from './company-overview/company-overview.co
     PersonsComponent,
     GalleryComponent,
     CompanyOverviewComponent,
+    GadgetsComponent,
+    PersonsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     NgbModule,
+    AppRoutingModule,
     
 
 

@@ -1,61 +1,62 @@
 <div style="text-align:center">
-<h1 class="baner">MOTORSERVIS ZGORZELEC</h1>
-<br>
-<br>
-<p>Jesteśmy firmą z dwudziestoletnim stażem.
-   Posiadamy doswiadczenie i dobrze wyposażony warsztat pozwalający wykonać każde zlecenie.</p>
-<div class="container">
-  <div class="row">
-   <div class ="col-md" style="text-align:center">
-<h3>Czynne:</h3>
-<br>
-<p>Poniedziałek-Piątek: 9:00-17:00</p>
-<p>Sobota-Niedziela: NIECZYNNE</p>
-<p>PRZERWA 14:00-15:30</p>
-   </div>
-   <div class ="col-md" style="text-align:center">
-   <h3>Nasz serwis oferuje :</h3>
-    <p>Naprawy powypadkowe</p>
-    <p>Pełna diagnostyka silników</p>
-    <p>Remonty silników</p>
-    <p>Naprawy bieżące</p>
-    <p>DIAGNOSTYKĘ KOMPUTEROWĄ</p>
-    </div>
-</div>
-</div>
-
-    <h4 class="supermarkt">Prowadzimy naprawy gwarancyjne i pogwarancyjne skuterów zakupionych w SUPER MARKETACH!</h4>
-    <div class="container">
-      <div class="row">
-         <div class ="col-sm" style="text-align:center">
-    <p>Oferujemy sprzedaż części do motocykli:</p>
-    <img class="yamaha" src="assets/yamaha.jpg" width=200px height=50px>
-    <img class="kawasaki" src="assets/kawasaki_logo.png" width=200px height=50px>
-    <br>
-    <br>
-    <img src="assets/honda.png" width=200px height=120px>
-    &emsp;
-    <img src="assets/suzuki.jpg" width=200px height=50px>
-    <br>
-    <br>
-    <h6> oraz SKUTERÓW JAPOŃSKICH , EUROPEJSKICH i CHIŃSKICH</h6>
-         </div>
-    <div class="col-sm" style="text-align:center">
-    <p>Posiadamy w ciaglej sprzedaży oleje i smary:</p>
-    <img class="motul" src="assets/motul.jpg" width=200px height=50px>
-    <img class="eneos" src="assets/eneos.jpg" width=250px height=80px>
-    <br>
-    <img src="assets/agip.jpg" width=125px height=150px>
-
-    </div>
-         </div>
+   <h1 class="baner">MOTORSERVIS ZGORZELEC</h1>
+   <br>
+   <br>
+   <p>Jesteśmy firmą z {{year}}-letnim stażem.
+      Posiadamy doswiadczenie i dobrze wyposażony warsztat pozwalający wykonać każde zlecenie.</p>
+   <div class="container">
+     <div class="row">
+      <div class ="col-md" style="text-align:center">
+   <h3>Czynne:</h3>
+   <br>
+   <p>Poniedziałek-Piątek: 9:00-17:00</p>
+   <p>Sobota-Niedziela: NIECZYNNE</p>
+   <p>PRZERWA 14:00-15:30</p>
       </div>
-         <div class ="larsson" style="text-align:center">
-    <h4> Jesteśmy patronackim sklepem Larsson Polska ! </h4>
-    <img src="assets/larsson.png" width=250px height=50px>
-    </div>
-    <br>
-    <br>
- 
+      <div class ="col-md" style="text-align:center">
+      <h3>Nasz serwis oferuje :</h3>
+       <p>Naprawy powypadkowe</p>
+       <p>Pełna diagnostyka silników</p>
+       <p>Remonty silników</p>
+       <p>Naprawy bieżące</p>
+       <p>DIAGNOSTYKĘ KOMPUTEROWĄ</p>
+       </div>
+   </div>
+   </div>
+   
+       <h4 class="supermarkt">Prowadzimy naprawy gwarancyjne i pogwarancyjne skuterów zakupionych w SUPER MARKETACH!</h4>
+       <div class="container">
+         <div class="row">
+            <div class ="col-sm" style="text-align:center">
+       <p>Oferujemy sprzedaż części do motocykli:</p>
+       <img class="yamaha" src="assets/yamaha.jpg" width=200px height=50px>
+       <img class="kawasaki" src="assets/kawasaki_logo.png" width=200px height=50px>
+       <br>
+       <br>
+       <img src="assets/honda.png" width=200px height=120px>
+       &emsp;
+       <img src="assets/suzuki.jpg" width=200px height=50px>
+       <br>
+       <br>
+       <h6> oraz SKUTERÓW JAPOŃSKICH , EUROPEJSKICH i CHIŃSKICH</h6>
+            </div>
+       <div class="col-sm" style="text-align:center">
+       <p>Posiadamy w ciaglej sprzedaży oleje i smary:</p>
+       <img class="motul" src="assets/motul.jpg" width=200px height=50px>
+       <img class="eneos" src="assets/eneos.jpg" width=250px height=80px>
+       <br>
+       <img src="assets/agip.jpg" width=125px height=150px>
+   
+       </div>
+            </div>
+         </div>
+            <div class ="larsson" style="text-align:center">
+       <h4> Jesteśmy patronackim sklepem Larsson Polska ! </h4>
+       <img src="assets/larsson.png" width=250px height=50px id="persons">
+       </div>
+       <br>
+       <br>
+   </div>
 
-</div>
+   <app-persons [persons]="persons"></app-persons>
+   <app-gallery [gallery]="gallery"></app-gallery>

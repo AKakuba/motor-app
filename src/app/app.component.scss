@@ -1,4 +1,23 @@
+$dark:black;
+@import "~bootstrap/scss/bootstrap";
+
 @font-face {
     font-family: banerFont;
     src: url(../assets/Bleeding_Cowboys.woff);
   }
+
+  :host{
+    font-family: 'Spicy Rice', cursive;
+    scroll-behavior: smooth;
+  }
+
+.main{
+  position: relative;
+  top:10rem;
+  z-index: -5;
+  margin-bottom:5rem;
+}
+
+app-footer{
+  margin-top:10rem;
+}
