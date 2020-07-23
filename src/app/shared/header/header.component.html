@@ -10,16 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#persons">O NAS</a>
+          <a class="nav-link" href="#persons" (click)="isCollapsed = !isCollapsed">O NAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#gallery">GALERIA</a>
+          <a class="nav-link" href="#gallery" (click)="isCollapsed = !isCollapsed" >GALERIA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">KONTAKT</a>
+          <a class="nav-link" href="#contact" (click)="isCollapsed = !isCollapsed">KONTAKT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="../gadgets" style="color:red;">GADŻETY</a>
+          <a class="nav-link" routerLink="../gadgets" style="color:red;" (click)="isCollapsed = !isCollapsed">GADŻETY</a>
         </li>
       </ul>
     </div>

@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import { NavigationEnd } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-gadgets',
@@ -7,7 +10,9 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./gadgets.component.scss'],
   providers: [NgbCarouselConfig] 
 })
-export class GadgetsComponent  {
+export class GadgetsComponent implements OnInit {
+  [x: string]: any;
+
   images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
   constructor(config: NgbCarouselConfig) {
@@ -17,6 +22,14 @@ export class GadgetsComponent  {
     config.keyboard = false;
     config.pauseOnHover = true;
   }
- 
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        document.body.scrollTop = 0;
+    });
+}
 
 }
