@@ -18,3 +18,8 @@ img{
     width: 100%;
   height: auto;
 }
+
+:host{
+    display: inline-block;
+    width:97%;
+}

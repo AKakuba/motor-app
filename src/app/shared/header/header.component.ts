@@ -7,4 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent{
   public isCollapsed = true;
+
+  divClick(event) {
+    event.stopPropagation();
+    this.isCollapsed = !this.isCollapsed;
+}
 }

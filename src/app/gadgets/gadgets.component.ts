@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
-import { NavigationEnd } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 
 
@@ -15,7 +15,8 @@ export class GadgetsComponent implements OnInit {
 
   images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig,
+              private router:Router) {
     // customize default values of carousels used by this component tree
     config.interval = 2000;
     config.wrap = true;
@@ -24,12 +25,12 @@ export class GadgetsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-        }
-        document.body.scrollTop = 0;
-    });
-}
+      this.router.events.subscribe((evt) => {
+          if (!(evt instanceof NavigationEnd)) {
+              return;
+          }
+          document.body.scrollTop = 0;
+      });
+  }
 
 }
